@@ -4,6 +4,7 @@
 
 	// Icons
 	import { Linkedin } from '@lucide/svelte';
+	import SkillGraph from '$lib/components/SkillGraph.svelte';
 
 	const links = [
 		{
@@ -19,7 +20,7 @@
 	];
 </script>
 
-<article class="mx-auto max-w-md place-items-center">
+<article class="mx-auto w-full place-items-center">
 	<Avatar
 		src="./images/me.jpg"
 		size="size-32"
@@ -38,4 +39,5 @@
 			</a>
 		{/each}
 	</div>
+	<SkillGraph />
 </article>
